@@ -1,0 +1,106 @@
+<style lang="less">
+.protocol_content{
+	padding-top:6px;
+	.table{
+		text-align: center;
+		/*border: 1px #dddee1 solid;*/
+		background: #dddee1;
+		line-height: 32px;
+		td{
+			background: #FFFFFF;
+		}
+		th{
+			background: #f7f7f7;
+		}
+	}
+}
+</style>
+
+<template>
+	<div class="protocol_content">
+		<!--<FormItem label="" label-width="1">-->
+			<div v-html="tpl">
+			</div>
+		<!--</FormItem>-->
+
+	</div>
+</template>
+<script>
+	import { replace, digitUppercase } from '../../../libs/util.js';
+	export default {
+		props: {
+			data: {
+				type: Object,
+				required: true,
+			},
+			info: { // 主合同信息
+				type: Object,
+				required: true,
+			},
+			policy: {
+				type: Object,
+				required: true,
+			}
+		},
+		data() {
+			return {
+
+			};
+		},
+		computed: {
+			tpl() {
+				let v='';let tr='';let th='';
+				this.policy.list.forEach((items, index) => {
+					const item = this.data.htItemList.find(item => item.id == items.itemId);
+					if(!item) {
+						return this.data.protocal;
+					}
+					const text = this.data.protocal ? this.data.protocal : items.protocalText;
+					//	            let total = digitUppercase(this.info.price);
+					//	            let money = digitUppercase(Math.round(this.info.price*r));
+					let name = item.name;
+					let num = items.giftCount;
+					items.itemSubId = item.htItemSubList[0].id;
+					items.itemSubName = item.htItemSubList[0].name;
+					let costPrice = items.costPrice;
+					let startTime = (new Date(items.startTime)).format('yyyy-MM-dd 00:00:00');
+					let endTime = (new Date(items.endTime)).format('yyyy-MM-dd 00:00:00');
+					v = replace(text, ['$1$', name], ['$2$', num], ['$3$', Number(items.publicPrice).toFixed(2)], ['$4$', Number(costPrice).toFixed(2)]);
+					if(this.parseDom(v)[0].tagName=="TABLE"){
+						th = this.parseDom(v)[0].childNodes[0].innerHTML;
+						tr += this.parseDom(v)[0].childNodes[1].innerHTML;
+					}
+				})
+				if(th){
+					v='<table class="table" border="0" width="100%" cellpadding="0" cellspacing="1"><tbody>'+ th+tr +'</tbody></table>';
+				}
+				
+				this.policy.list.forEach((items, index) => {
+					items.protocalText = v;
+				});
+				return v;
+			}
+		},
+		created(){
+			console.log(this.policy.list,this.data)
+		},
+		methods: {
+			parseDom(arg) {
+				let objE = document.createElement("div");
+				objE.innerHTML = arg;
+				return objE.childNodes;
+			},
+			setData() {},
+			validForm() {
+				return Promise.resolve(true);
+			}
+		},
+		watch: {
+			tpl(v) {
+				this.policy.list.forEach((items, index) => {
+					items.protocalText = v;
+				});
+			}
+		}
+	}
+</script>

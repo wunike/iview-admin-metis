@@ -1,0 +1,39 @@
+@baseThemeColor: #44BCB7; //主题色
+@baseThemeHoverColor: #2294a5; //主题焦点色
+@baseBorderColor: #d7d7d7; //边框颜色
+@baseFontColor: #444444; //字体颜色
+@themeColor: @baseThemeColor;
+//input聚焦
+
+.inputFocus() {
+    outline: 0;
+    border-color: @baseThemeHoverColor;
+    box-shadow: 0 0 0 2px tint(@baseThemeHoverColor, 20%);
+    transition: border 0.2s ease-in-out,background 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+//边框
+
+.baseBorder() {
+    border: 1px @baseBorderColor solid;
+}
+
+.baseBorder(@direction, @borderWidth:1px, @color:@baseBorderColor) {
+    border@{direction}: @borderWidth @color solid;
+}
+
+.baseBorderHover() {
+    border: 1px @baseThemeHoverColor solid;
+}
+
+.baseBorderHover(@direction, @borderWidth:1px, @color:@baseThemeHoverColor) {
+    .baseBorder(@direction,@borderWidth,@color);
+}
+
+.clear() {
+    zoom: 1;
+    &::before, &::after{
+        content: '';
+        display: block;height: 0;line-height: 0;font-size: 0;
+        clear: both;
+    }
+}

@@ -1,0 +1,66 @@
+@import "./theme.less";
+
+.editModeBtn(){
+    width: 50px;
+    height: 40px;
+    line-height: 38px;
+    background-color:@baseThemeColor;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor:pointer;
+    &:hover{
+        background-color: @baseThemeHoverColor;
+    }
+    i{
+        cursor:pointer;
+    }
+}
+.editModeBtnEdit{
+    .editModeBtn;
+
+}
+.editModeBtnSort{
+    .editModeBtn;
+
+}
+.editModeBtnDelete{
+    .editModeBtn;
+    background-color: #e07065;
+    &:hover{
+        background-color: #cb5a4f;
+    }
+}
+.editModeBtnSetting{
+    .editModeBtn;
+
+}
+.editModeBtnLocked{
+    .editModeBtn;
+    background-color: #fdbe6f;
+    &:hover{
+        background-color: #e8a95b;
+    }
+}
+.editModeBtnUnLocked{
+    .editModeBtn;
+
+}
+
+
+.oneLine {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.clear() {
+    zoom: 1;
+    &::before, &::after{
+        content: '';
+        clear: both;
+        display: block;height: 0;line-height: 0;font-size: 0;
+    }
+}
+@messageBarBgColor: #eaeff5; //模板状态下背景色

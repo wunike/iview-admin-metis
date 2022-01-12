@@ -1,0 +1,21 @@
+[submodule "src/modules/spoc-core-web"]
+	path = src/modules/spoc-core-web
+	url = ssh://git@gitlab.ivygate.cn:10022/ivygate-web/spoc-core-web.git
+[submodule "src/modules/spoc-sign-web"]
+	path = src/modules/spoc-sign-web
+	url = ssh://git@gitlab.ivygate.cn:10022/ivygate-web/spoc-sign-web.git
+[submodule "src/modules/spoc-jw-web"]
+	path = src/modules/spoc-jw-web
+	url = ssh://git@gitlab.ivygate.cn:10022/ivygate-web/spoc-jw-web.git
+[submodule "src/modules/spoc-hootie-web"]
+	path = src/modules/spoc-hootie-web
+	url = ssh://git@gitlab.ivygate.cn:10022/ivygate-web/spoc-hootie-web.git
+[submodule "src/modules/spoc-crm-web"]
+	path = src/modules/spoc-crm-web
+	url = ssh://git@gitlab.ivygate.cn:10022/ivygate-web/spoc-crm-web.git
+[submodule "src/modules/spoc-report-web"]
+	path = src/modules/spoc-report-web
+	url = ssh://git@gitlab.ivygate.cn:10022/ivygate-web/spoc-report-web.git
+[submodule "src/modules/spoc-h5-web"]
+	path = src/modules/spoc-h5-web
+	url = ssh://git@gitlab.ivygate.cn:10022/ivygate-web/spoc-h5-web.git

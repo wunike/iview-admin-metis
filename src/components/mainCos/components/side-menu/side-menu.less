@@ -1,0 +1,85 @@
+.side-menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    user-select: none;
+    .selected {
+        position: relative;
+        background: rgba(47, 66, 72, 1);
+        .drawer_title {
+            &:hover {
+                color: rgba(255, 255, 255, 1);
+                background: initial;
+            }
+        }
+        &::after {
+            content: "";
+            height: 100%;
+            box-sizing: border-box;
+            border-left: 4px #44BCB7 solid;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+//      &::before {
+//          content: "";
+//          box-sizing: border-box;
+//          border: 6px #44BCB7 solid;
+//          border-top-color: rgba(255, 255, 255, 0.1);
+//          border-bottom-color: rgba(255, 255, 255, 0.1);
+//          border-left: none;
+//          position: absolute;
+//          top: ~"calc(50% - 6px)";
+//          right: 0;
+//      }
+    }
+    .menu-collapsed {
+//      padding-top: 10px;
+        width: 100%;
+        .ivu-dropdown {
+            width: 100%;
+            .ivu-dropdown-rel a {
+                width: 100%;
+            }
+        }
+        .ivu-tooltip {
+            width: 100%;
+            .ivu-tooltip-rel {
+                width: 100%;
+                &:hover{
+                    a.drop-menu-a{
+                        color: rgba(255,255,255,1);
+                        img{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .ivu-tooltip-popper .ivu-tooltip-content {
+                .ivu-tooltip-arrow {
+                    border-right-color: #fff;
+                }
+                .ivu-tooltip-inner {
+                    background: #fff;
+                    color: #495060;
+                }
+            }
+        }
+    }
+    a.drop-menu-a {
+        display: inline-block;
+        padding: 6px 15px;
+        width: 100%;
+        text-align: center;
+        color: rgba(255,255,255,0.7);
+        img{
+            opacity: 0.7;
+        }
+    }
+}
+
+.menu-title {
+    padding-left: 6px;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="194px" height="96px" viewBox="0 0 194 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>分组 20</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="35.4258363%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.4" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="1.16961705%" y1="1.16961705%" x2="50%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0.3" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-1-我的课程" transform="translate(-240.000000, -365.000000)" fill-rule="nonzero">
+            <g id="分组-9" transform="translate(240.000000, 365.000000)">
+                <g id="分组-20">
+                    <rect id="矩形" fill="#44BCB7" x="0" y="0" width="194" height="96" rx="4"></rect>
+                    <g id="分组-5" transform="translate(0.000000, 6.000000)">
+                        <path d="M0,78.7978834 C13.1490689,78.2634237 24.9615134,77.0048373 35.4373333,75.0221244 C67.142136,69.0214942 87.2191633,57.5888594 128.298667,57.5888594 C157.269333,57.5888594 179.169778,61.9267141 194,70.6024234 L194,90 L0,90 L0,78.7978834 Z" id="矩形" fill-opacity="0.5" fill="url(#linearGradient-1)"></path>
+                        <path d="M45.5179533,53.84022 L65.272813,70.4343139 L16.1265766,70.4343139 L35.8814364,53.84022 C38.542487,51.6049359 42.8569026,51.6049359 45.5179533,53.84022 Z" id="矩形" fill-opacity="0.5" fill="url(#linearGradient-2)"></path>
+                        <path d="M17.3457305,63.9522721 L25.054944,70.4280161 L2.27373675e-13,70.4280161 L7.70921355,63.9522721 C10.3702642,61.716988 14.6846798,61.716988 17.3457305,63.9522721 Z" id="矩形-copy-5" fill-opacity="0.5" fill="url(#linearGradient-2)"></path>
+                        <path d="M67.0701694,59.7548165 L79.75825,70.4128118 L44.7455718,70.4128118 L57.4336524,59.7548165 C60.0947031,57.5195324 64.4091187,57.5195324 67.0701694,59.7548165 Z" id="矩形-copy-6" fill-opacity="0.5" fill="url(#linearGradient-2)"></path>
+                        <path d="M183.750981,52.5601377 L159.081371,77.229758 L159.081372,77.2297462 C159.931386,63.973132 170.494367,53.4101516 183.750981,52.5601377 Z" id="矩形-copy-7" fill="url(#linearGradient-3)" transform="translate(171.416176, 64.894948) rotate(-315.000000) translate(-171.416176, -64.894948) "></path>
+                        <path d="M123.710898,80.6651561 L123.710898,83.270557 L121.382898,83.270557 L121.382898,80.725564 L116,80.8652415 L119.857076,74.9864759 L116,75.0865608 L122.617823,65 L128.826027,74.7537461 L125.20769,74.8476361 L128.826027,80.5324268 L123.710898,80.6651561 Z" id="合并形状" fill-opacity="0.3" fill="#33A5A0"></path>
+                        <path d="M100.280069,61.0995461 L100.280069,61.7931034 L99.5040687,61.7931034 L99.5040687,61.1222015 L98,61.166113 L99.1057712,59.2878624 L98,59.3201455 L99.9546494,56 L101.786177,59.2096077 L100.750057,59.2398573 L101.786177,61.0555751 L100.280069,61.0995461 Z" id="合并形状-copy" fill-opacity="0.2" fill="#FFFFFF"></path>
+                        <ellipse id="椭圆形" fill-opacity="0.1" fill="#FFFFFF" cx="166.769333" cy="18.5" rx="10.7693333" ry="10.5"></ellipse>
+                        <ellipse id="椭圆形-copy-4" fill-opacity="0.1" fill="#FFFFFF" cx="178.630667" cy="7.5" rx="7.63066667" ry="7.5"></ellipse>
+                        <path d="M90.1783401,60.3186027 L90.1783401,61.5755968 L89.1436735,61.5755968 L89.1436735,60.3427076 L87,60.3926494 L88.7535916,57.9525574 L87,57.9934114 L89.869897,54 L92.5661936,57.8637341 L90.918677,57.9021168 L92.5661936,60.2629721 L90.1783401,60.3186027 Z" id="合并形状-copy-2" fill-opacity="0.2" fill="#FFFFFF"></path>
+                        <path d="M142.689726,68.4761588 L142.689726,70.5809019 L141.396393,70.5809019 L141.396393,68.4981806 L138,68.5560118 L140.908277,65.4810201 L138,65.53054 L142.284912,61 L146.320954,65.3888573 L143.58159,65.435501 L146.320954,68.414329 L142.689726,68.4761588 Z" id="合并形状-copy-4" fill-opacity="0.3" fill="#33A5A0"></path>
+                        <path d="M56.0255873,83.390999 L56.0255873,85.7665782 L54.7322539,85.7665782 L54.7322539,83.4096965 L51.0069301,83.4635527 L54.3418654,80.3898685 L51.0069301,80.4380809 L55.6207723,76.1856764 L59.9714538,80.3084828 L56.826734,80.3539453 L59.9714538,83.3339545 L56.0255873,83.390999 Z" id="合并形状-copy-3" fill-opacity="0.3" fill="#33A5A0"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
